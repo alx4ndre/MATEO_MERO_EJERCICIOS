@@ -3,8 +3,10 @@
 int main(int argc, char *argv[]) {
 
     char vocales[] = {'a','e','i','o','u'};
+    char *ptr;
+    ptr = vocales;
 
-    vocales[3] = 'x';
+    *(ptr + 3) = 'x';
 
     for (int i = 0; i < 5; i++)
     {
