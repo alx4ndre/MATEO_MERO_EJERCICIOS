@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
-    char vocales[]={'a','e','i','o','u'};
-    char *ptr;
-    ptr = vocales;
-    for (int i = 0; i < 6; i++)
+int main(int argc, char *argv[]) {
+
+    char vocales[] = {'a','e','i','o','u'};
+
+    vocales[3] = 'x';
+
+    for (int i = 0; i < 5; i++)
     {
-        printf("%c ", *(ptr+i));
+        printf("%c ", vocales[i]);
     }
 
     return 0;
